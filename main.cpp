@@ -11,7 +11,9 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <vtkRenderWindow.h>
 #include <vtkRenderer.h>
 #include <vtkRenderWindowInteractor.h>
-#include <vtkXMLRectilinearGridWriter.h>
+#include <vtkRectilinearGridWriter.h>
+#include <vtkFloatArray.h>
+#include <vtkPointData.h>
 
 int main(int, char *[])
 {
@@ -19,7 +21,7 @@ int main(int, char *[])
   vtkSmartPointer<vtkRectilinearGrid> grid =
     vtkSmartPointer<vtkRectilinearGrid>::New();
 
-  grid->SetDimensions(2,3,1);
+  grid->SetDimensions(2,3,2);
 
   vtkSmartPointer<vtkDoubleArray> xArray =
     vtkSmartPointer<vtkDoubleArray>::New();
@@ -35,6 +37,7 @@ int main(int, char *[])
   vtkSmartPointer<vtkDoubleArray> zArray =
     vtkSmartPointer<vtkDoubleArray>::New();
   zArray->InsertNextValue(0.0);
+  zArray->InsertNextValue(1.0);
 
   grid->SetXCoordinates(xArray);
   grid->SetYCoordinates(yArray);
@@ -52,6 +55,18 @@ int main(int, char *[])
     std::cout << "Point " << id
               << " : (" << p[0] << " , " << p[1] << " , " << p[2] << ")" << std::endl;
     }
+
+    vtkSmartPointer<vtkFloatArray> values =
+		vtkSmartPointer<vtkFloatArray>::New();
+
+	values->SetNumberOfComponents(3);
+	values->SetName("velocity");
+
+    for (int i=0; i<2*3*2; i++)
+    {   vtkGenericDataArray<float> t;
+        values->InsertNextValue(t);
+    }
+    grid->GetPointData()->AddArray(values);
 
   // Create a mapper and actor
   vtkSmartPointer<vtkDataSetMapper> mapper =
@@ -81,11 +96,11 @@ int main(int, char *[])
 
   renderWindow->Render();
   renderWindowInteractor->Start();
-  vtkSmartPointer<vtkXMLRectilinearGridWriter> writer =
-	vtkSmartPointer<vtkXMLRectilinearGridWriter>::New();
+  vtkSmartPointer<vtkRectilinearGridWriter> writer =
+	vtkSmartPointer<vtkRectilinearGridWriter>::New();
 	writer->SetFileName("test.vtk");
 	writer->SetInputData(mapper->GetInput());
-	writer->SetDataModeToAscii();
+	//writer->SetDataModeToAscii();
 	writer->Write();
 
   return EXIT_SUCCESS;

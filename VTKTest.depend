@@ -18,35 +18,33 @@
 	<vtkDataArray.h>
 	<vtkXMLImageDataReader.h>
 
-1596590039 /usr/local/include/vtk-9.0/vtkVersion.h
+1537543751 /usr/local/include/vtk-9.0/vtkVersion.h
 	"vtkCommonCoreModule.h"
 	"vtkObject.h"
 	"vtkVersionMacros.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkCommonCoreModule.h
+1537544008 /usr/local/include/vtk-9.0/vtkCommonCoreModule.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkObject.h
+1537543751 /usr/local/include/vtk-9.0/vtkObject.h
 	"vtkCommonCoreModule.h"
 	"vtkObjectBase.h"
 	"vtkSetGet.h"
 	"vtkTimeStamp.h"
 	"vtkWeakPointerBase.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkObjectBase.h
+1537543751 /usr/local/include/vtk-9.0/vtkObjectBase.h
 	"vtkCommonCoreModule.h"
-	"vtkFeatures.h"
 	"vtkIndent.h"
 	"vtkSystemIncludes.h"
-	"vtkType.h"
-	<atomic>
+	"vtkAtomicTypes.h"
 
 1596590192 /usr/local/include/vtk-9.0/vtkFeatures.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkIndent.h
+1537543751 /usr/local/include/vtk-9.0/vtkIndent.h
 	"vtkCommonCoreModule.h"
 	"vtkSystemIncludes.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkSystemIncludes.h
+1537543751 /usr/local/include/vtk-9.0/vtkSystemIncludes.h
 	"vtkWin32Header.h"
 	"vtkIOStreamFwd.h"
 	"vtkIOStream.h"
@@ -57,31 +55,32 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<mem.h>
+	<search.h>
 
-1596590039 /usr/local/include/vtk-9.0/vtkWin32Header.h
+1537543751 /usr/local/include/vtk-9.0/vtkWin32Header.h
+	"vtkConfigure.h"
 	"vtkABI.h"
-	"vtkBuild.h"
-	"vtkPlatform.h"
 	<windows.h>
 
-1596590039 /usr/local/include/vtk-9.0/vtkABI.h
+1537543751 /usr/local/include/vtk-9.0/vtkABI.h
 
 1596590192 /usr/local/include/vtk-9.0/vtkBuild.h
 
 1596590192 /usr/local/include/vtk-9.0/vtkPlatform.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkIOStreamFwd.h
+1537543751 /usr/local/include/vtk-9.0/vtkIOStreamFwd.h
+	"vtkConfigure.h"
 	<iosfwd>
 
-1596590039 /usr/local/include/vtk-9.0/vtkIOStream.h
+1537543751 /usr/local/include/vtk-9.0/vtkIOStream.h
+	"vtkConfigure.h"
+	<iostream>
 	<fstream>
 	<iomanip>
-	<iostream>
 
-1596590039 /usr/local/include/vtk-9.0/vtkType.h
-	"vtkCompiler.h"
-	"vtkLegacy.h"
-	"vtkOptions.h"
+1537543751 /usr/local/include/vtk-9.0/vtkType.h
+	"vtkConfigure.h"
 	"vtk_kwiml.h"
 	"stdbool.h"
 
@@ -91,51 +90,45 @@
 
 1596590192 /usr/local/include/vtk-9.0/vtkOptions.h
 
-1596590040 /usr/local/include/vtk-9.0/vtk_kwiml.h
+1537544003 /usr/local/include/vtk-9.0/vtk_kwiml.h
 	"vtkkwiml/abi.h"
 	"vtkkwiml/int.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkkwiml/abi.h
+1537543753 /usr/local/include/vtk-9.0/vtkkwiml/abi.h
 
-1596590040 /usr/local/include/vtk-9.0/vtkkwiml/int.h
+1537543753 /usr/local/include/vtk-9.0/vtkkwiml/int.h
 	"abi.h"
 	<stdint.h>
 	<inttypes.h>
 
-1596590039 /usr/local/include/vtk-9.0/vtkWrappingHints.h
+1537543751 /usr/local/include/vtk-9.0/vtkWrappingHints.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkOStreamWrapper.h
+1537543751 /usr/local/include/vtk-9.0/vtkOStreamWrapper.h
 	"vtkCommonCoreModule.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkOStrStreamWrapper.h
+1537543751 /usr/local/include/vtk-9.0/vtkOStrStreamWrapper.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkSetGet.h
+1537543751 /usr/local/include/vtk-9.0/vtkSetGet.h
 	"vtkCommonCoreModule.h"
-	"vtkCompiler.h"
-	"vtkLegacy.h"
 	"vtkSystemIncludes.h"
 	<math.h>
-	<type_traits>
 	<typeinfo>
 
-1596590039 /usr/local/include/vtk-9.0/vtkTimeStamp.h
+1537543751 /usr/local/include/vtk-9.0/vtkTimeStamp.h
 	"vtkCommonCoreModule.h"
 	"vtkSystemIncludes.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkWeakPointerBase.h
+1537543751 /usr/local/include/vtk-9.0/vtkWeakPointerBase.h
 	"vtkCommonCoreModule.h"
 	"vtkObjectBase.h"
 
-1596590192 /usr/local/include/vtk-9.0/vtkVersionMacros.h
+1537544007 /usr/local/include/vtk-9.0/vtkVersionMacros.h
 
-1596590039 /usr/local/include/vtk-9.0/vtkSmartPointer.h
+1537543751 /usr/local/include/vtk-9.0/vtkSmartPointer.h
 	"vtkSmartPointerBase.h"
-	"vtkMeta.h"
 	"vtkNew.h"
-	<type_traits>
-	<utility>
 
-1596590039 /usr/local/include/vtk-9.0/vtkSmartPointerBase.h
+1537543751 /usr/local/include/vtk-9.0/vtkSmartPointerBase.h
 	"vtkCommonCoreModule.h"
 	"vtkObjectBase.h"
 
@@ -143,16 +136,14 @@
 	<type_traits>
 	<utility>
 
-1596590039 /usr/local/include/vtk-9.0/vtkNew.h
+1537543751 /usr/local/include/vtk-9.0/vtkNew.h
 	"vtkIOStream.h"
-	"vtkMeta.h"
-	<type_traits>
 
 1596590039 /usr/local/include/vtk-9.0/vtkSphere.h
 	"vtkCommonDataModelModule.h"
 	"vtkImplicitFunction.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkCommonDataModelModule.h
+1537544009 /usr/local/include/vtk-9.0/vtkCommonDataModelModule.h
 
 1596590039 /usr/local/include/vtk-9.0/vtkImplicitFunction.h
 	"vtkCommonDataModelModule.h"
@@ -166,12 +157,11 @@
 	"vtkAlgorithm.h"
 	"vtkCommonExecutionModelModule.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkAlgorithm.h
+1537543751 /usr/local/include/vtk-9.0/vtkAlgorithm.h
 	"vtkCommonExecutionModelModule.h"
-	"vtkDeprecation.h"
 	"vtkObject.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkCommonExecutionModelModule.h
+1537544009 /usr/local/include/vtk-9.0/vtkCommonExecutionModelModule.h
 
 1596590039 /usr/local/include/vtk-9.0/vtkDeprecation.h
 	"vtkVersion.h"
@@ -203,18 +193,18 @@
 	"vtkRenderingVolumeModule.h"
 	"vtkAutoInit.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkRenderingCoreModule.h
+1537544012 /usr/local/include/vtk-9.0/vtkRenderingCoreModule.h
 	"vtkFiltersCoreModule.h"
 	"vtkAutoInit.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkFiltersCoreModule.h
+1537544009 /usr/local/include/vtk-9.0/vtkFiltersCoreModule.h
 	"vtkAutoInit.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkAutoInit.h
+1537543751 /usr/local/include/vtk-9.0/vtkAutoInit.h
 	"vtkDebugLeaksManager.h"
 	"vtkTimeStamp.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkDebugLeaksManager.h
+1537543751 /usr/local/include/vtk-9.0/vtkDebugLeaksManager.h
 	"vtkCommonCoreModule.h"
 	"vtkSystemIncludes.h"
 
@@ -239,13 +229,13 @@
 	"vtkAbstractMapper3D.h"
 	"vtkRenderingCoreModule.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkAbstractMapper3D.h
+1537543752 /usr/local/include/vtk-9.0/vtkAbstractMapper3D.h
+	"vtkRenderingCoreModule.h"
 	"vtkAbstractMapper.h"
-	"vtkRenderingCoreModule.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkAbstractMapper.h
-	"vtkAlgorithm.h"
+1537543752 /usr/local/include/vtk-9.0/vtkAbstractMapper.h
 	"vtkRenderingCoreModule.h"
+	"vtkAlgorithm.h"
 
 1596590040 /usr/local/include/vtk-9.0/vtkColorTransferFunction.h
 	"vtkRenderingCoreModule.h"
@@ -256,104 +246,102 @@
 	"vtkObject.h"
 	"vtkVariant.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkVariant.h
+1537543751 /usr/local/include/vtk-9.0/vtkVariant.h
 	"vtkCommonCoreModule.h"
-	"vtkObject.h"
-	"vtkSetGet.h"
-	"vtkStdString.h"
-	"vtkSystemIncludes.h"
 	"vtkType.h"
+	"vtkSystemIncludes.h"
+	"vtkSetGet.h"
+	"vtkObject.h"
+	"vtkStdString.h"
 	"vtkUnicodeString.h"
 	"vtkVariantInlineOperators.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkStdString.h
+1537543751 /usr/local/include/vtk-9.0/vtkStdString.h
 	"vtkCommonCoreModule.h"
 	"vtkSystemIncludes.h"
 	<string>
 
-1596590039 /usr/local/include/vtk-9.0/vtkUnicodeString.h
+1537543751 /usr/local/include/vtk-9.0/vtkUnicodeString.h
 	"vtkCommonCoreModule.h"
 	"vtkSystemIncludes.h"
 	<string>
 	<vector>
 
-1596590039 /usr/local/include/vtk-9.0/vtkVariantInlineOperators.h
+1537543751 /usr/local/include/vtk-9.0/vtkVariantInlineOperators.h
 	<climits>
 
 1596590039 /usr/local/include/vtk-9.0/vtkPiecewiseFunction.h
 	"vtkCommonDataModelModule.h"
 	"vtkDataObject.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkDataObject.h
+1537543751 /usr/local/include/vtk-9.0/vtkDataObject.h
 	"vtkCommonDataModelModule.h"
 	"vtkObject.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkRenderer.h
+1537543752 /usr/local/include/vtk-9.0/vtkRenderer.h
 	"vtkRenderingCoreModule.h"
 	"vtkViewport.h"
-	"vtkActorCollection.h"
 	"vtkVolumeCollection.h"
+	"vtkActorCollection.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkViewport.h
-	"vtkObject.h"
+1537543752 /usr/local/include/vtk-9.0/vtkViewport.h
 	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkActorCollection.h
-	"vtkActor.h"
+1537543752 /usr/local/include/vtk-9.0/vtkActorCollection.h
+	"vtkRenderingCoreModule.h"
 	"vtkPropCollection.h"
-	"vtkRenderingCoreModule.h"
+	"vtkActor.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkActor.h
+1537543752 /usr/local/include/vtk-9.0/vtkActor.h
+	"vtkRenderingCoreModule.h"
 	"vtkProp3D.h"
-	"vtkRenderingCoreModule.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkProp3D.h
+1537543752 /usr/local/include/vtk-9.0/vtkProp3D.h
+	"vtkRenderingCoreModule.h"
 	"vtkProp.h"
-	"vtkRenderingCoreModule.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkProp.h
-	"vtkObject.h"
+1537543752 /usr/local/include/vtk-9.0/vtkProp.h
 	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
 	<vector>
 
-1596590040 /usr/local/include/vtk-9.0/vtkPropCollection.h
-	"vtkCollection.h"
+1537543752 /usr/local/include/vtk-9.0/vtkPropCollection.h
 	"vtkRenderingCoreModule.h"
+	"vtkCollection.h"
 	"vtkProp.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkCollection.h
+1537543751 /usr/local/include/vtk-9.0/vtkCollection.h
 	"vtkCommonCoreModule.h"
 	"vtkObject.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkVolumeCollection.h
-	"vtkPropCollection.h"
+1537543752 /usr/local/include/vtk-9.0/vtkVolumeCollection.h
 	"vtkRenderingCoreModule.h"
+	"vtkPropCollection.h"
 	"vtkVolume.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkVolume.h
+1537543752 /usr/local/include/vtk-9.0/vtkVolume.h
+	"vtkRenderingCoreModule.h"
 	"vtkProp3D.h"
-	"vtkRenderingCoreModule.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkRenderWindow.h
-	"vtkDeprecation.h"
-	"vtkNew.h"
+1537543752 /usr/local/include/vtk-9.0/vtkRenderWindow.h
 	"vtkRenderingCoreModule.h"
-	"vtkSmartPointer.h"
 	"vtkWindow.h"
+	"vtkNew.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkWindow.h
+1537543751 /usr/local/include/vtk-9.0/vtkWindow.h
 	"vtkCommonCoreModule.h"
 	"vtkObject.h"
 
-1596590040 /usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h
-	"vtkCommand.h"
-	"vtkObject.h"
+1537543752 /usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h
 	"vtkRenderingCoreModule.h"
-
-1596590039 /usr/local/include/vtk-9.0/vtkCommand.h
-	"vtkCommonCoreModule.h"
 	"vtkObject.h"
+	"vtkCommand.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkCommand.h
+	"vtkCommonCoreModule.h"
 	"vtkObjectBase.h"
+	"vtkObject.h"
 
 1596590040 /usr/local/include/vtk-9.0/vtkVolumeProperty.h
 	"vtkImplicitFunction.h"
@@ -385,15 +373,12 @@
 	<cmath>
 	<cstdlib>
 
-1596590039 /usr/local/include/vtk-9.0/vtkMath.h
+1537543751 /usr/local/include/vtk-9.0/vtkMath.h
 	"vtkCommonCoreModule.h"
-	"vtkMathPrivate.hxx"
-	"vtkMatrixUtilities.h"
 	"vtkObject.h"
-	"vtkSmartPointer.h"
 	"vtkTypeTraits.h"
+	"vtkSmartPointer.h"
 	"vtkMathConfigure.h"
-	<algorithm>
 	<cassert>
 
 1596590039 /usr/local/include/vtk-9.0/vtkMathPrivate.hxx
@@ -404,10 +389,10 @@
 1596590039 /usr/local/include/vtk-9.0/vtkMatrixUtilities.h
 	<type_traits>
 
-1596590039 /usr/local/include/vtk-9.0/vtkTypeTraits.h
+1537543751 /usr/local/include/vtk-9.0/vtkTypeTraits.h
 	"vtkSystemIncludes.h"
 
-1596590193 /usr/local/include/vtk-9.0/vtkMathConfigure.h
+1537544008 /usr/local/include/vtk-9.0/vtkMathConfigure.h
 	<cmath>
 	<float.h>
 
@@ -420,11 +405,11 @@
 	"vtkDataSet.h"
 	"vtkStructuredData.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkDataSet.h
+1537543751 /usr/local/include/vtk-9.0/vtkDataSet.h
 	"vtkCommonDataModelModule.h"
 	"vtkDataObject.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkStructuredData.h
+1537543751 /usr/local/include/vtk-9.0/vtkStructuredData.h
 	"vtkCommonDataModelModule.h"
 	"vtkObject.h"
 
@@ -450,15 +435,14 @@
 	"vtkObject.h"
 	"vtkAbstractArray.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkAbstractArray.h
+1537543751 /usr/local/include/vtk-9.0/vtkAbstractArray.h
 	"vtkCommonCoreModule.h"
 	"vtkObject.h"
 	"vtkVariant.h"
 
-1596590039 /usr/local/include/vtk-9.0/vtkDataArray.h
-	"vtkAbstractArray.h"
+1537543751 /usr/local/include/vtk-9.0/vtkDataArray.h
 	"vtkCommonCoreModule.h"
-	"vtkVTK_USE_SCALED_SOA_ARRAYS.h"
+	"vtkAbstractArray.h"
 
 1596590192 /usr/local/include/vtk-9.0/vtkVTK_USE_SCALED_SOA_ARRAYS.h
 
@@ -466,7 +450,7 @@
 	"vtkIOXMLModule.h"
 	"vtkXMLStructuredDataReader.h"
 
-1596590197 /usr/local/include/vtk-9.0/vtkIOXMLModule.h
+1537544017 /usr/local/include/vtk-9.0/vtkIOXMLModule.h
 
 1596590040 /usr/local/include/vtk-9.0/vtkXMLStructuredDataReader.h
 	"vtkIOXMLModule.h"
@@ -482,4 +466,113 @@
 	"vtkIOXMLModule.h"
 	<string>
 	<vector>
+
+1604328202 source:/media/arash/SSD/Projects/VTKTest/main.cpp
+	<vtkAutoInit.h>
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkRectilinearGrid.h>
+	<vtkMath.h>
+	<vtkDoubleArray.h>
+	<vtkDataSetMapper.h>
+	<vtkActor.h>
+	<vtkRenderWindow.h>
+	<vtkRenderer.h>
+	<vtkRenderWindowInteractor.h>
+	<vtkXMLRectilinearGridWriter.h>
+
+1537544007 /usr/local/include/vtk-9.0/vtkConfigure.h
+	"vtkVersionMacros.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkAtomicTypes.h
+	"vtkAtomic.h"
+	"vtkType.h"
+
+1537544006 /usr/local/include/vtk-9.0/vtkAtomic.h
+	"vtkCommonCoreModule.h"
+	"vtkAtomicTypeConcepts.h"
+	"vtkConfigure.h"
+	"vtkSystemIncludes.h"
+	"vtkType.h"
+	<cstddef>
+	<libkern/OSAtomic.h>
+
+1537543751 /usr/local/include/vtk-9.0/vtkAtomicTypeConcepts.h
+	<limits>
+
+1537543751 /usr/local/include/vtk-9.0/vtkRectilinearGrid.h
+	"vtkCommonDataModelModule.h"
+	"vtkDataSet.h"
+	"vtkStructuredData.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkDoubleArray.h
+	"vtkCommonCoreModule.h"
+	"vtkDataArray.h"
+	"vtkAOSDataArrayTemplate.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkAOSDataArrayTemplate.h
+	"vtkCommonCoreModule.h"
+	"vtkGenericDataArray.h"
+	"vtkBuffer.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkGenericDataArray.h
+	"vtkDataArray.h"
+	"vtkSmartPointer.h"
+	"vtkTypeTraits.h"
+	"vtkGenericDataArrayLookupHelper.h"
+	<cassert>
+	"vtkGenericDataArray.txx"
+
+1537543751 /usr/local/include/vtk-9.0/vtkGenericDataArrayLookupHelper.h
+	<algorithm>
+	<cmath>
+	"vtkIdList.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkIdList.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkGenericDataArray.txx
+	"vtkGenericDataArray.h"
+	"vtkIdList.h"
+	"vtkMath.h"
+	"vtkVariantCast.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkVariantCast.h
+	"vtkUnicodeString.h"
+	<typeinfo>
+
+1537543751 /usr/local/include/vtk-9.0/vtkBuffer.h
+	"vtkObject.h"
+	"vtkObjectFactory.h"
+
+1537543751 /usr/local/include/vtk-9.0/vtkObjectFactory.h
+	"vtkDebugLeaksManager.h"
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+	<string>
+
+1537543752 /usr/local/include/vtk-9.0/vtkDataSetMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkMapper.h"
+
+1537543752 /usr/local/include/vtk-9.0/vtkMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkAbstractMapper3D.h"
+	"vtkSystemIncludes.h"
+	"vtkSmartPointer.h"
+	<vector>
+
+1537543752 /usr/local/include/vtk-9.0/vtkXMLRectilinearGridWriter.h
+	"vtkIOXMLModule.h"
+	"vtkXMLStructuredDataWriter.h"
+
+1537543752 /usr/local/include/vtk-9.0/vtkXMLStructuredDataWriter.h
+	"vtkIOXMLModule.h"
+	"vtkXMLWriter.h"
+
+1537543752 /usr/local/include/vtk-9.0/vtkXMLWriter.h
+	"vtkIOXMLModule.h"
+	"vtkAlgorithm.h"
+	<sstream>
 
